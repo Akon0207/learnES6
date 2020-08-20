@@ -1,1 +1,19 @@
 /*通用样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    height: 100%;
+    width: 1230px;
+    /*background: #ff0000;*/
+    margin: 0 auto;
+    position: relative;
+}

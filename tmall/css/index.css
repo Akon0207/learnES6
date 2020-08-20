@@ -1,0 +1,31 @@
+
+
+#header {
+    height: 32px;
+    background: #f2f2f2;
+    line-height: 32px;
+    font-size: 12px;
+}
+/*#quick-menu {*/
+/*    position: relative;*/
+/*    top: 0;*/
+/*}*/
+#quick-menu {
+    float: right;
+}
+#quick-menu li {
+    float: left;
+    /*padding: 0 10px;*/
+}
+#login-info {
+    display: inline-block;
+    width: auto;
+    float: left;
+}
+#header a,#login-info span {
+    color: #999;
+    padding: 0 10px;
+}
+#header a:hover{
+    color: #ff0036;
+}
