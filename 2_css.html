@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*亲子代选择器 #ul1 > li{}只选中亲子元素，忽略孙辈元素 IE6不支持*/
+        #ul1 > .menu {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+<ul id="ul1">
+    <li>11
+        <ul>
+            <li class="menu">aa</li>
+            <li>bb</li>
+            <li>cc</li>
+        </ul>
+    </li>
+    <li class="menu">22</li>
+    <li>33</li>
+</ul>
+</body>
+</html>
