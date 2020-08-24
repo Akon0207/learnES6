@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 2000px;
+        }
+        .parent div {
+            width: 200px;
+            height: 200px;
+        }
+        .div1 {
+            background: #ff0000;
+        }
+        .div2 {
+            background: green;
+            position: relative;
+            /*相对定位是相对于自己原来的位置，不会脱离文档流，原本占据的空间仍然会保留*/
+            top: 100px;
+            left: 100px;
+        }
+        .div3 {
+            background: blue;
+            position: absolute;
+            /*绝对定位，脱离文档流，绝对定位是相对于祖先的定位，若祖先都没有定位，那么相对于body定位*/
+            top: 100px;
+            left: 100px;
+        }
+        .div4 {
+            height: 50px;
+            position: sticky;
+            /*粘性定位，类似淘宝搜索框，需要设置一个阀值，top，left，right，bottom*/
+            top: 0;
+            background: #0f0f0f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parent">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</div>
+<div class="div4"></div>
+</body>
+</html>

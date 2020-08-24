@@ -15,7 +15,23 @@
 }
 #quick-menu li {
     float: left;
+    position: relative;
     /*padding: 0 10px;*/
+}
+.trangle {
+    width: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #bbb transparent transparent;
+    /*做一个三角形，把div长宽设置为0，把border设置一个宽度，再给boder一个颜色，就可以得到由4个三角形组成的正方形，想要哪个三角形，把其他三角形设置为透明就可以了*/
+    /*border-top-color: #bbb;*/
+    /*border-left-color: green;*/
+    /*border-right-color: red;*/
+    /*border-bottom-color: blue;*/
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    margin-top: -1px;
 }
 #login-info {
     display: inline-block;
