@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <title>ES6 Learning</title>
     <meta name="keywords" content="ES6,learn">
+<!--  网页关键字，方便搜索  -->
     <meta name="description" content="这是一个练习用的网页">
+    <style>
+        #textarea {
+            resize: none;
+        /*  resize:none 禁止更改大小  */
+        }
+    </style>
+<!--  description网页描述  -->
 </head>
 <body>
 <!--ol 为有序列表-->
@@ -25,6 +33,7 @@
     </ul>
 <a href="http://www.baidu.com" target="_blank">百度一下</a>
 <img src="pic.png" alt="图片加载失败了" >
+<!--alt属性是用于图片加载失败时给的提示-->
 <table border="1" cellpadding="0" cellspacing="0">
     <!--  rowspan 跨行  -->
     <!--  colspan 跨列  -->
@@ -37,10 +46,24 @@
         <td>44</td>
     </tr>
 </table>
+<form action="user/register">
+    <label for="uname">
+        用户名：<input type="text" id="uname" name="uname">
+    </label>
+    <label for="pwd">
+        密码：<input type="password" id="pwd" name="pwd">
+    </label>
+    备注：<textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    <input type="submit">
+    <input type="reset">
+<!--  reset 按钮用来重置表单  -->
+</form>
 <!--
-块级元素block：自己占一行显示 h1~h6 li ol ul table
-行级元素inline：行级元素和行级元素会在一行显示 a span
-行块级元素：img
+块级元素block：自己占一行显示 h1~h6 li ol ul table，块级元素可以设置宽高
+行级元素inline：行级元素和行级元素会在一行显示 a span，行级元素不能设置宽高，宽高是通过内容撑开的，行级元素外边距只能设置左右，不能设置上下，内边距可以正常设置
+行块级元素：img input
+块级元素和行级元素是可以通过display属性值转换的，none、block、inline、auto
+inline-block只支持标准浏览器，不支持ie6
 -->
 </body>
 </html>
