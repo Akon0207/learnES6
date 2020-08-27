@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            border: 1px dashed #0f0f0f;
+            margin: 200px auto;
+        }
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+            transition: transform 1s linear;
+            -moz-transition: transform 1s linear;
+            -webkit-transition: transform 1s linear;
+            -o-transition: transform 1s linear;
+            -ms-transition: transform 1s linear;
+        }
+        #div2:hover {
+            -webkit-transform: rotate(-30deg);
+            -moz-transform: rotate(-30deg);
+            -ms-transform: rotate(-30deg);
+            -o-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">Akon</div>
+    </div>
+</body>
+</html>
