@@ -5,6 +5,7 @@
     background: #f2f2f2;
     line-height: 32px;
     font-size: 12px;
+    border-bottom: 1px solid #e5e5e5;
 }
 /*#quick-menu {*/
 /*    position: relative;*/
@@ -13,12 +14,42 @@
 #quick-menu {
     float: right;
 }
-#quick-menu li {
+#quick-menu>li {
     float: left;
     position: relative;
     /*padding: 0 10px;*/
 }
-.trangle {
+#quick-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    width: 92px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    line-height: 24px;
+    padding: 6px 0;
+}
+#quick-menu .submenu li:hover>a {
+    text-decoration: underline;
+}
+#quick-menu .split {
+    width: 1px;
+    height: 14px;
+    background: #ccc;
+    padding: 0;
+    margin: 8px 5px;
+}
+#header .trangle {
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 1px;
+    height: 33px;
+    cursor: pointer;
+}
+#header .trangle::after {
+    content: "";
     width: 0;
     border-width: 3px;
     border-style: solid;
@@ -32,7 +63,39 @@
     top: 50%;
     right: 3px;
     margin-top: -1px;
+    /*border-bottom-width: 0;*/
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+    transform-origin: 3px 1.5px;
 }
+#header .trangle:hover::after {
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    transition: transform .5s ease;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#header .trangle:hover {
+    background: #fff;
+    border-color: #e5e5e5;
+}
+#header .trangle:hover>.submenu {
+    display: block;
+}
+
+#header .trangle:hover>a {
+    text-decoration: underline;
+    color: #ff0036;
+}
+
 #login-info {
     display: inline-block;
     width: auto;
@@ -47,5 +110,47 @@
 }
 .icon-buy-car {
     color:#FF0036;
+    font-size: 12px;
+    position: relative;
+    left: 7px;
+}
+#login-info .register {
+    padding: 0;
+}
+#quick-menu .qr-code {
+    display: none;
+    width: 175px;
+    height: 227px;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    top: 28px;
+    left: -60px;
+    background: #ffffff;
+    box-shadow: 0 0 5px #aaa;
+}
+#quick-menu .qr-code::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -10px;
+    left: 82.5px;
+}
 
+#quick-menu .mobile:hover .qr-code {
+    display: block;
+}
+#quick-menu .mobile .mobile-img1 {
+    background: url(../img/mobile1.png) 0 0 no-repeat;
+    width: 175px;
+    height: 175px;
+}
+#quick-menu .mobile .mobile-img2 {
+    background: url(../img/mobile2.jpg)0 0 no-repeat;
+    width: 145px;
+    height: 30px;
+    margin: 5px auto;
 }
