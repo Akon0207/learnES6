@@ -154,3 +154,41 @@
     height: 30px;
     margin: 5px auto;
 }
+#support .support-menu{
+    display: none;
+    position: absolute;
+    width: 122px;
+    overflow: hidden;
+    right: 0;
+    left: auto;
+    line-height: 1.4;
+    padding: 8px 10px;
+    border:solid #eee;
+    border-width: 0 1px 1px;
+    background-color: #fff;
+}
+#support:hover .support-menu{
+    display: block;
+}
+#support .support-menu a {
+    padding: 0;
+    margin-right: 20px;
+    display: inline-block;
+    line-height: 22px;
+    width: 48px;
+}
+#support .support-menu a:nth-child(even){
+    margin-right:0;
+}
+#support .support-menu a:hover {
+    text-decoration: underline;
+}
+#support .support-menu li {
+    padding: 5px 0;
+    float: none;
+    height: auto;
+    line-height: 1.4;
+    display: block;
+    border-bottom: 1px dotted #827777;
+    position: relative;
+}

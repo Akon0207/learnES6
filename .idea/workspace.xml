@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="056b3ff8-1cee-44ba-9f2e-992866e01e5c" name="Default Changelist" comment="学习了四种定位（relative,absolute,fix,sticky）的区别，学习了如何制作一个三角形" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gM0bHbMdFc1eSqrZn8Os5o2lrE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/Atliview" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="056b3ff8-1cee-44ba-9f2e-992866e01e5c" name="Default Changelist" comment="" />
+      <created>1597909224044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597909224044</updated>
+      <workItem from="1597909225466" duration="7857000" />
+      <workItem from="1597971276354" duration="7077000" />
+      <workItem from="1598234758288" duration="2504000" />
+      <workItem from="1598250157210" duration="6186000" />
+      <workItem from="1598321610917" duration="1220000" />
+    </task>
+    <task id="LOCAL-00001" summary="练习用，学习html，css基础知识并尝试做一个天猫首页">
+      <created>1597918334859</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597918334859</updated>
+    </task>
+    <task id="LOCAL-00002" summary="练习用，学习html，css基础知识并尝试做一个天猫首页">
+      <created>1597971484646</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597971484646</updated>
+    </task>
+    <task id="LOCAL-00003" summary="练习用，学习html，css基础知识并尝试做一个天猫首页">
+      <created>1598000808523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598000808523</updated>
+    </task>
+    <task id="LOCAL-00004" summary="学习了四种定位（relative,absolute,fix,sticky）的区别，学习了如何制作一个三角形">
+      <created>1598263129838</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598263129838</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="练习用，学习html，css基础知识并尝试做一个天猫首页" />
+    <MESSAGE value="学习了四种定位（relative,absolute,fix,sticky）的区别，学习了如何制作一个三角形" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习了四种定位（relative,absolute,fix,sticky）的区别，学习了如何制作一个三角形" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="990" y="303" key="FileChooserDialogImpl" timestamp="1598321648584">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="990" y="303" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598321648584" />
+    <state x="686" y="251" key="Vcs.Push.Dialog.v2" timestamp="1598263156665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598263156665" />
+    <state x="897" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598236283357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="897" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598236283357" />
+    <state x="768" y="111" width="1003" height="880" key="dock-window-1" timestamp="1597918625933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="768" y="111" width="1003" height="880" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1597918625933" />
+    <state x="1370" y="361" key="search.everywhere.popup" timestamp="1597910723099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1370" y="361" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597910723099" />
+  </component>
+</project>
