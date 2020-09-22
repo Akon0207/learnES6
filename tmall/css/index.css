@@ -114,6 +114,19 @@
     position: relative;
     left: 7px;
 }
+.icon-shouji {
+    color: #ff0036;
+    font-size: 14px;
+    position: relative;
+    left: 12px;
+    top: 1px;
+}
+.icon-daohang {
+    color: #ff0036;
+    font-size: 13px;
+    position: relative;
+    left: 10px;
+}
 #login-info .register {
     padding: 0;
 }
@@ -191,4 +204,53 @@
     display: block;
     border-bottom: 1px dotted #827777;
     position: relative;
+}
+#sitemap:hover .sitemap-menu {
+    display: block;
+}
+#sitemap .sitemap-menu {
+    position: absolute;
+    width: 1198px;
+    display: none;
+    border: solid #eee;
+    border-width: 0 1px 1px;
+    right: 0;
+    left: auto;
+    padding: 25px 0;
+}
+#sitemap .sitemap-menu a:hover {
+    text-decoration: underline;
+}
+#sitemap .sitemap-menu ul {
+    margin-right: -20px;
+}
+#sitemap .hot,#sitemap .market {
+    width: 455px;
+}
+#sitemap .help {
+    width: 196px;
+}
+#sitemap .sitemap-menu>div {
+    float: left;
+    padding: 0 0 0 30px;
+    overflow: hidden;
+    height: 110px;
+}
+#sitemap .sitemap-menu>div h2{
+    font-size: 16px;
+    font-family: '\5FAE\8F6F\96C5\9ED1',arial,"\5b8b\4f53";
+    font-weight: 100;
+}
+#sitemap .sitemap-menu li {
+    width: 95px;
+    float: left;
+    padding: 6px 0;
+    overflow: hidden;
+    line-height: 1.4;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#sitemap .sitemap-menu li a{
+    padding: 0;
 }
