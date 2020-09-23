@@ -1,5 +1,5 @@
 
-
+/* header 开始*/
 #header {
     height: 32px;
     background: #f2f2f2;
@@ -30,6 +30,8 @@
     border-width: 0 1px 1px;
     line-height: 24px;
     padding: 6px 0;
+    background: #fff;
+    z-index: 2;
 }
 #quick-menu .submenu li:hover>a {
     text-decoration: underline;
@@ -254,3 +256,69 @@
 #sitemap .sitemap-menu li a{
     padding: 0;
 }
+/* header 结束*/
+
+/* logo-search 开始*/
+
+#log-search .wrapper>div {
+    float: left;
+}
+
+.logo img {
+    width: 240px;
+    height: 130px;
+}
+.search {
+    margin-top: 38px;
+    margin-left: 38px;
+}
+.search .search-ipt {
+    width: 483px;
+    height: 36px;
+    border: none;
+    outline: none;/*去掉text表单内聚焦时的框框*/
+    text-indent: 1em;
+    font-size: 14px;
+    line-height: 36px;
+}
+.search .search-btn {
+    width: 132px;
+    height: 36px;
+    border: none;
+    background: #ff0036;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+}
+.search-box {
+    width: 620px;
+    border: 2px solid #ff0036;
+    height: 36px;
+}
+.search .hot-query li {
+    float: left;
+    padding: 0 12px;
+    position: relative;
+    line-height: 21px;
+}
+.search .hot-query li:not(:last-of-type):after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 14px;
+    background: #999;
+    transform: translateY(-50%) scaleX(0.5);
+}
+.search .hot-query li a {
+    color: #999;
+    font-size: 12px;
+}
+.search .hot-query {
+    margin-top: 5px;
+}
+/* logo-search 结束*/
