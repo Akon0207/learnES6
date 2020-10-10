@@ -259,7 +259,9 @@
 /* header 结束*/
 
 /* logo-search 开始*/
-
+#log-search {
+    height: 135px;
+}
 #log-search .wrapper>div {
     float: left;
 }
@@ -322,3 +324,27 @@
     margin-top: 5px;
 }
 /* logo-search 结束*/
+
+/* main-nav 开始*/
+#main-nav .nav {
+    margin-left: 200px;
+}
+#main-nav .nav li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px;
+}
+#main-nav .nav .nav-img {
+    width: 100px;
+    /*height: 35px;*/
+}
+#main-nav .nav a {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+}
+#main-nav .nav a:hover {
+    color: #f00;
+}
+/* main-nav 结束*/
