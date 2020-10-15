@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>透明度</title>
+	<style type="text/css">
+		.test {
+			height: 200px;
+			width: 200px;
+			background-color: red;
+			opacity: .5;/* 0~1 */
+			/*为了兼容ie 678，设置透明度需要在后面多设置一个filter*/
+			filter: alpha(opacity=50);/* 0~100 */
+
+		}
+	</style>
+</head>
+<body>
+	<div class="test">
+		
+	</div>
+</body>
+</html>

@@ -326,6 +326,9 @@
 /* logo-search 结束*/
 
 /* main-nav 开始*/
+#main-nav {
+    height: 35px;
+}
 #main-nav .nav {
     margin-left: 200px;
 }
@@ -348,3 +351,11 @@
     color: #f00;
 }
 /* main-nav 结束*/
+#banner {
+    background-color: #040f37;
+}
+#banner .wrapper {
+    height: 500px;
+    background: url(../img/banner1.webp) no-repeat center;
+    
+}
