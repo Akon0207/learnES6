@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>弹性盒模型</title>
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .parent-box {
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;/*horizontal、inherit和inline-axis是横向排列，vertical和block-axis是竖向排列*/
+            -moz-box-orient: horizontal;
+            -o-box-orient: horizontal;
+            box-orient: horizontal;
+            /* -webkit-box-direction: reverse;
+            -moz-box-direction: reverse;反向排列normal,inherit */
+            -webkit-box-align: center;/*水平方向*/
+            -moz-box-align: center;
+            -webkit-box-pack: center;/*垂直方向*/
+            -moz-box-pack: center;
+
+        }
+        .box {
+            height: 400px;
+        }
+        .box1 {
+            background-color: aqua;
+            -webkit-box-flex: 1;/*份数,分配父元素剩余的部分，比如说有一个div有外边距，那么除去外边距之后剩下的再分配,或者某个div有固定的宽度，那么除去这部分宽度之后剩下的才进行分配*/
+        }
+        .box2 {
+            background-color: blue;
+            -webkit-box-flex: 1;
+            margin: 0 50px;
+            height: 200px;
+        }
+        .box3 {
+            background-color: chocolate;
+            width: 500px;
+            height: 300px;
+            /* -webkit-box-flex: 1; */
+        }
+    </style>
+</head>
+
+<body>
+	<div class="parent-box">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <!-- <div class="box box4"></div> -->
+    </div>
+
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
+</html>

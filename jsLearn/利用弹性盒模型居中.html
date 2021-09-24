@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>弹性盒模型</title>
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .parent-box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            /*定义盒模型主轴方向flex-direction
+            row列，column行*/
+            /*定义盒模型元素排列顺序row-reverse,column-reverse*/
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            background-color: chartreuse;
+            justify-content: center;/*水平居中*/
+            align-items: center;/*垂直居中*/
+            
+            
+            
+        }
+        .box {
+            /* height: 400px; */
+            background-color: blue;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+
+<body>
+	<div class="parent-box">
+        <div class="box">Akon</div>
+    </div>
+
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
+</html>

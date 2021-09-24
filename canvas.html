@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+	<style type="text/css">
+		#myCanvas {
+			/*width: 400px;
+			height: 200px;*/
+			position: absolute;
+			top: 300px;
+			left: 300px;
+			border: 1px solid #cccccc;
+		}
+	</style>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<script type="text/javascript">
+	var mycns = document.getElementById("myCanvas");
+	var ctx = mycns.getContext("2d");
+	ctx.moveTo(10,10);
+	ctx.lineTo(50,50);
+	ctx.lineTo(100,60);
+	ctx.strokeStyle = "red";
+	ctx.stroke();
+	// setTimeout(function () {
+	// 	mycns.width = 500;
+	// },2000)
+</script>
+</body>
+</html>

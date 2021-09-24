@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>box-sizing</title>
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <style>
+       .box {
+           width: 300px;
+           height: 300px;
+           border: 10px solid rgb(0, 255, 242);
+           padding: 10px;
+           -webkit-box-sizing: border-box;/*怪异模式/混杂模式（ie6）和W3C标准和模式通过这个转换*/  
+           -moz-box-sizing: border-box;
+           -o-box-sizing: border-box;
+           box-sizing: border-box;
+           /* box-sizing: content-box; */
+           /*
+           W3C标准盒模型：宽度=内容宽度
+           怪异/混杂模式： 宽度=内容宽度+padding+border
+           */
+       }
+    </style>
+</head>
+
+<body>
+	<div class="box">
+        testing box
+    </div>
+
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
+</html>

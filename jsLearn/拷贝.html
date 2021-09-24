@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>拷贝</title>
+</head>
+<body>
+<script type="text/javascript">
+	// var a = 5;
+	// var b = a;
+	// a = 6;
+	// console.log(b);
+	var obj1 = {
+		name: "Akon",
+		age: 18
+	}
+	var obj2 = obj1;//浅拷贝
+	obj1.name = "Lisa";
+	console.log(obj2.name);
+	var obj3 = {};
+	obj3.name = obj1.name;
+	obj3.age = obj1.age;
+	console.log(obj3);
+	obj1.name = "Akon";
+	console.log(obj3);
+	clone(obj1);
+	function clone(obj) {
+		var newObj = {};
+		for(var key in obj){
+			if(typeof obj[key] == "object"){
+				newObj[key] = clone(obj[key]);
+			}else{
+				newObj[key] = obj[key]
+			}
+		}
+		console.log(newObj);
+		return newObj;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>右键菜单</title>
+
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		ul {
+			list-style: none;
+			width: 80px;
+			border: 1px solid #cccccc;
+			position: absolute;
+			display: none;
+			background: #fff;
+		}
+		#menu li {
+			padding: 5px;
+			text-align: center;
+			cursor: pointer;
+			
+		}
+		#menu li:hover {
+			background: #cccccc;
+			color: #fff;
+		}
+		#menu li:not(:last-child) {
+			border-bottom: 1px dashed #cccccc;
+		}
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li>菜单1</li>
+		<li>菜单2</li>
+		<li>菜单3</li>
+		<li>菜单4</li>
+	</ul>
+
+
+	<script type="text/javascript">
+		var oMenu = document.getElementById("menu");
+		document.oncontextmenu = function(e) {//oncontextmenu点击鼠标右键触发事件
+			e = e || window.event; //兼容问题
+			e.preventDefault(); //阻止默认行为ie8以上,也可以用return false
+			oMenu.style.display = "block";
+			console.log(event.clientY+":::"+event.clientX);
+			oMenu.style.top = e.clientY.toString()+"px";
+			oMenu.style.left = e.clientX.toString()+"px";
+		}
+		document.onclick = function () {
+			oMenu.style.display = "none";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>弹性盒模型</title>
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .parent-box {
+            display: flex;
+            /*定义盒模型主轴方向flex-direction
+            row列，column行*/
+            /*定义盒模型元素排列顺序row-reverse,column-reverse*/
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row-reverse;
+            
+            
+            
+        }
+        .box {
+            height: 400px;
+        }
+        .box1 {
+            background-color: aqua;
+            flex-grow: 1;
+            
+        }
+        .box2 {
+            background-color: blue;
+            flex-grow: 1;
+        }
+        .box3 {
+            background-color: chocolate;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="parent-box">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <!-- <div class="box box4"></div> -->
+    </div>
+
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
+</html>

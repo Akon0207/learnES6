@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>类</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	//类
+	function People(name,age,school){//构造函数
+		//属性写在构造函数里面
+		this.name = name;
+		this.age = age;
+		this.school = school
+		this.showSchool = function(){//方法如果定义在构造函数，每次实例化一个对象，都会去new一个函数，从性能上面来讲，方法最好定义在原型上
+			console.log("我的学校是"+this.school);
+		}
+	}
+	//原型   方法写在原型里面
+	People.prototype.showName = function(){
+		console.log("我的名字是"+this.name);
+	}
+	//类的实例化对象
+	var p1 =new People("zhangsan",18,"广石化");
+	p1.showName();
+	p1.showSchool();
+	console.log(p1);
+</script>
+</body>
+</html>

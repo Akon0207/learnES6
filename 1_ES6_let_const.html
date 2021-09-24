@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="nav">
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+        <li>004</li>
+    </ul>
+    <script>
+        //var -> variable
+        // var a = 5;
+        // console.log(a);
+        // var a = 5;
+        // function foo() {
+        //     var a = 6;
+        //     console.log(a);
+        // }
+        // foo();
+        // console.log(a);
+        // console.log(a);//var 变量提升,当要输出a的时候，会去检查a有没有被定义，即使定义a的语句在输出之后，它也不会报错
+        // var a = 5;
+        // for(var i=0;i<5;i++){
+        //     console.log(i)
+        // }
+        // console.log(i);//var 没有块级作用域，所以i输出为5，而不是报错
+        // console.log(a);
+        // let a = 5;
+        /*
+        关键字let，定义一个变量
+        let的好处：
+        1.不允许变量提升；
+        2.不允许重复声明；
+        3.暂时性死区：封闭作用域，凡是在声明之前就使用这些变量，就会报错；
+        4.块级作用域
+        */
+        // var aLi = document.querySelectorAll("#nav li");
+        // console.log(aLi);
+        // for(var i=0;i<aLi.length;i++){
+            // aLi[i].onclick = function(){
+            //     console.log(i);//输出全是4
+            // }
+            // aLi[i].index = i;
+            // aLi[i].onclick = function(){
+            //     console.log(this.index);
+            // }
+            // (function(index){//闭包弊端：会让变量不会回收，一直占着内存
+            //     aLi[index].onclick = function(){
+            //         console.log(index);
+            //     }
+            // })(i)
+            
+        // }
+        // for(let i=0;i<aLi.length;i++){
+        //     aLi[i].onclick = function(){
+        //         console.log(i);
+        //     }
+        // }
+        /*
+        关键字const，定义一个常量
+        const保证的并不是变量的值不能改动，而是变量指向的那个内存地址不能改动
+        */
+        // const a = 5;
+        // a = 6;
+        const obj = {
+            age:19,
+            name:"Akon"
+        }
+        //Object.freeze(obj)可以冻结对象，对象内的键值不能被改变
+        Object.freeze(obj);
+        obj.age = 18;
+        console.log(obj);
+    </script>
+</body>
+</html>

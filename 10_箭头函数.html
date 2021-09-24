@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" value="btn" id="btn">
+    <script>
+        /*
+        箭头函数
+        1.函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象；
+        2.不可以当作构造函数，也就是说，不可以使用new命令，否则会报错；
+        3.不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用rest参数代替
+        */
+        // function sum(x,y){
+        //     return x+y;
+        // }
+        // let sum = (x,y)=>{
+        //     return x+y;
+        // }
+        // let sum = (x,y)=> x+y;
+        // console.log(sum(5,6));
+        // let obtn = document.getElementById("btn");
+        // obtn.onclick = function(){
+        //     setTimeout(()=>{
+        //         console.log(this);
+        //     },2000);
+        // }
+        let foo=(...arg)=>{
+            console.log(arg);
+        }
+        foo(1,2);
+    </script>
+</body>
+</html>
