@@ -17,34 +17,8 @@
         // console.log(a,b,c)
         // let [a,b,c] = [1,[2,4],3];
         // console.log(a,b,c)
-        // let [a,[b,c],d] = [1,[2],3];
-        // console.log(a,b,c,d)
-        var imageSrc = "./preload.jpg";
-        //@param image:Image 对象，ext:图片的格式(jpg)
-            function getBase64Image(image, ext) {
-                var canvas = document.createElement("canvas");
-                canvas.width = image.width;
-                canvas.height = image.height;
-                var context = canvas.getContext("2d");
-                context.drawImage(image, 0, 0, image.width, image.height);
- 
-                // 这里是不支持跨域的
-                var base64 = canvas.toDataURL("image/" + ext);
-                return base64;
- 
-            }
-            var image = new Image();
-            //image.crossOrigin=""; // 如果图片是跨域的，填上"*"或者"anonymous" 核心是请求头中包含了 Origin: "anonymous"或"*" 字段，响应头中就会附加上 Access-Control-Allow-Origin: * 字段,
-            image.src = imageSrc;
-            var img = document.createElement("img");
-            image.onload = function() {
-                var ext = imageSrc.substring(imageSrc.lastIndexOf(".") + 1);
-                var base64 = getBase64Image(image, ext);
-                img.src = base64;
-                // document.appendChild(img);
-                console.log(base64);
-                //alert(base64);
-            }
+        let [a,[b,c],d] = [1,[2],3];
+        console.log(a,b,c,d)
     </script>
 </body>
 </html>
